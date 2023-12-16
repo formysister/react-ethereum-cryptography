@@ -28,6 +28,10 @@
   color: #61dafb;
 }
 
+.link-bar {
+  width: 70%;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +39,30 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-around;
+}
+
+.items-center {
+  align-items: center;
 }
