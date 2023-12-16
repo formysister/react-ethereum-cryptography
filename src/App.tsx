@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar } from './components';
+import { Navbar, Landing } from './components';
 import logo from './logo.svg';
 import './App.css';
 
@@ -47,6 +47,7 @@ function App() {
                     </a>
                 </div>
             </header>
+            <Landing />
         </div>
     );
 }

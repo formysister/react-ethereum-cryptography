@@ -1,3 +1,4 @@
 import Navbar from "./Navbar";
+import Landing from "./Landing";
 
-export { Navbar }
+export { Navbar, Landing }

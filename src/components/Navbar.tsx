@@ -1,9 +1,11 @@
 import { ConnectButton } from "@rainbow-me/rainbowkit"
+import Divider from "./common/Divider"
 import "../styles/index.css"
 
 import metamask_logo from "../assets/metamask.png"
 import rainbowkit_logo from "../assets/rainbowkit.png"
-import key_icon from "../assets/key.png"
+import ethers_logo from "../assets/ethers.png"
+import solidity_logo from "../assets/solidity.png"
 
 const Navbar = () => {
     return (
@@ -17,8 +19,13 @@ const Navbar = () => {
                     <img className="flex" alt="rainbowkit" src={rainbowkit_logo} width="30px" />
                     Sign Message
                 </button>
+                <Divider />
                 <button className="flex items-center btn">
-                    <img className="flex" alt="rainbowkit" src={key_icon} width="30px" />
+                    <img className="flex" alt="ethers" src={ethers_logo} width="30px" />
+                    Verify Message
+                </button>
+                <button className="flex items-center btn">
+                    <img className="flex" alt="solidity" src={solidity_logo} width="30px" />
                     Verify Message
                 </button>
             </div>

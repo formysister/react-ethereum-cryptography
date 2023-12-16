@@ -1,11 +1,11 @@
 import { getDefaultWallets } from "@rainbow-me/rainbowkit";
 import { configureChains, createConfig } from "wagmi";
-import { mainnet } from "@wagmi/chains"
+import { goerli } from "@wagmi/chains"
 import { infuraProvider } from "wagmi/providers/infura"
 
 const { chains, publicClient, webSocketPublicClient } = configureChains(
     [
-        mainnet,
+        goerli,
     ],
     [
         infuraProvider({ apiKey: "7056ce2ab33c415984a6fd637795b407" }),
