@@ -1,5 +1,11 @@
+// ** import external libraries & styles
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+
+import "@rainbow-me/rainbowkit/styles.css";
+import { getDefaultWallets, RainbowKitProvider } from "@rainbow-me/rainbowkit";
+import { configureChains, createConfig, WagmiConfig } from "wagmi";
+
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
