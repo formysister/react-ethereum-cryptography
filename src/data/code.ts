@@ -17,6 +17,17 @@ const code_source = {
       console.log("Signature:", signature);
     } else {
       console.error("MetaMask is not installed");
+    }`,
+    sign_wagmi: 
+    ` try {
+      //Get wallet client
+      const walletClient: any = await getWalletClient();
+      
+      //Sign message 
+      const signature = await walletClient?.signMessage({ message: signData.wagmiMessage });
+    }
+    catch (error) {
+      console.error(error);
     }`
 }
 

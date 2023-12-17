@@ -1,5 +1,5 @@
 const text = {
-    hello_world: "Hello World"
+    hello_world: "Hello, World!"
 }
 
 export default text
