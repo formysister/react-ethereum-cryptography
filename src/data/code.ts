@@ -22,9 +22,9 @@ const code_source = {
     ` try {
       //Get wallet client
       const walletClient: any = await getWalletClient();
-      
+
       //Sign message 
-      const signature = await walletClient?.signMessage({ message: signData.wagmiMessage });
+      const signature = await walletClient?.signMessage({ message: "Hello, World!" });              
     }
     catch (error) {
       console.error(error);
