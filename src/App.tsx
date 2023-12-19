@@ -1,7 +1,12 @@
 import React from 'react';
-import { Navbar, Landing } from './components';
+import { Navbar, Landing, Footer } from './components';
 import logo from './logo.svg';
 import './App.css';
+
+import ethers_logo from './assets/ethers.png'
+import metamask_logo from './assets/metamask.png'
+import rainbow_logo from './assets/rainbowkit.png'
+import solidity_logo from './assets/solidity.png'
 
 declare global {
     interface Window {
@@ -15,6 +20,12 @@ function App() {
             <header className="App-header">
                 <Navbar />
                 <img src={logo} className="App-logo" alt="logo" />
+                <div className='flex logos-bar'>
+                    <img className='flex' src={ethers_logo} alt='ethers' width="180px" />
+                    <img className='flex' src={metamask_logo} alt='metamask' width="100px" />
+                    <img className='flex' src={rainbow_logo} alt='rainbow' width="100px" />
+                    <img className='flex' src={solidity_logo} alt='wagmi' width="100px" />
+                </div>
                 <p>
                     Fork this app and customize your cryptography
                 </p>
@@ -54,6 +65,7 @@ function App() {
                 </div>
             </header>
             <Landing />
+            <Footer />
         </div>
     );
 }

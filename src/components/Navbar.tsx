@@ -11,23 +11,31 @@ const Navbar = () => {
     return (
         <div className="flex nav-bar justify-between">
             <div className="flex space-around">
-                <button className="flex items-center btn">
-                    <img className="flex" alt="metamask" src={metamask_logo} width="30px" />
-                    Sign Message
-                </button>
-                <button className="flex items-center btn">
-                    <img className="flex" alt="rainbowkit" src={rainbowkit_logo} width="30px" />
-                    Sign Message
-                </button>
+                <a href="#landing-section-1">
+                    <button className="flex items-center btn">
+                        <img className="flex" alt="metamask" src={metamask_logo} width="30px" height="30px" />
+                        Sign Message
+                    </button>
+                </a>
+                <a href="#landing-section-2">
+                    <button className="flex items-center btn">
+                        <img className="flex" alt="rainbowkit" src={rainbowkit_logo} width="30px" height="30px" />
+                        Sign Message
+                    </button>
+                </a>
                 <Divider />
-                <button className="flex items-center btn">
-                    <img className="flex" alt="ethers" src={ethers_logo} width="30px" />
-                    Verify Message
-                </button>
-                <button className="flex items-center btn">
-                    <img className="flex" alt="solidity" src={solidity_logo} width="30px" />
-                    Verify Message
-                </button>
+                <a href="#landing-section-3">
+                    <button className="flex items-center btn">
+                        <img className="flex" alt="ethers" src={ethers_logo} width="40px" height="30px" />
+                        Verify Message
+                    </button>
+                </a>
+                <a href="#landing-section-4">
+                    <button className="flex items-center btn">
+                        <img className="flex" alt="solidity" src={solidity_logo} width="30px" height="30px" />
+                        Verify Message
+                    </button>
+                </a>
             </div>
             <div className="flex">
                 <ConnectButton showBalance={false} />

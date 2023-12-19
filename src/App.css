@@ -5,6 +5,7 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  z-index: 100;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -32,6 +33,13 @@
   width: 70%;
 }
 
+.logos-bar {
+  position: absolute;
+  top: 55%;
+  opacity: 0.5;
+  z-index: 99;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -39,6 +47,15 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+a:visited {
+  color: #ffffff;
 }
 
 .flex {
