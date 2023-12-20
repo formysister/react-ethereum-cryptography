@@ -10,6 +10,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ## Sign plan message and hashed message with Metamask
 
+![screenshot2](./src/assets/screenshot_2.png)
 Message signing using MetaMask is a process that involves using the MetaMask wallet to verify that you are the originator of a transaction or message. It provides a way to prove ownership of a specific Ethereum address and allows the transaction or message to be added to the blockchain.
 
 Message signing with MetaMask is commonly used for various purposes, such as authentication, authorization, and secure exchanges of information . It provides a way to prove the ownership of an Ethereum address without revealing the private key.
