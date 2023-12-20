@@ -1,6 +1,6 @@
 # Getting Started with onchain/offchain cryptograhpy on Ethereum
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), [Metamask](https://docs.metamask.io), [Rainbowkit](https://www.rainbowkit.com/docs/introduction), [Wagmi](https://wagmi.sh).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), [Metamask](https://docs.metamask.io), [Rainbowkit](https://www.rainbowkit.com/docs/introduction), [Wagmi](https://wagmi.sh), [Ethers](https://docs.ethers.org/v5/).
 
 
 Runs the app in the development mode.\

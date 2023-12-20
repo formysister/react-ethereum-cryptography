@@ -62,6 +62,14 @@ function App() {
                     >
                         Learn Metamask
                     </a>
+                    <a
+                        className="App-link"
+                        href="https://docs.ethers.org/v5/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Learn Ethers.js
+                    </a>
                 </div>
             </header>
             <Landing />
