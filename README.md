@@ -92,7 +92,7 @@ catch (error) {
 Following code shows how to sign hashed message with Wagmi in Javascript.
 
 ```javascript
- try {
+try {
     //Get wallet client
     const walletClient = await getWalletClient();
 
@@ -105,6 +105,27 @@ Following code shows how to sign hashed message with Wagmi in Javascript.
     const signature = await walletClient?.signMessage({ message: { raw: messageHash } });    
 }
 catch (error) {
+    console.error(error);
+}
+```
+
+## Verify plan message using Ethers.js
+
+![screenshot4](./src/assets/screenshot_4.png)
+
+Message verification using ethers involves verifying the signature of a message to ensure its authenticity.
+
+```javascript
+try {
+    // Message to verify
+    const message = "Hello, World!";
+
+    // Signature to verify
+    const signature = "0x00..";
+      
+    const signer = await ethers.verifyMessage(message, signature);                                        
+}
+catch(error) {
     console.error(error);
 }
 ```
