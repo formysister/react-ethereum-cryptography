@@ -62,3 +62,49 @@ if (typeof window.ethereum !== "undefined") {
     console.error("MetaMask is not installed");
 }
 ```
+
+## Sign plan message and hashed message with Rainbowkit and Wagmi SDK
+
+![screenshot3](./src/assets/screenshot_3.png)
+
+Message signing using Wagmi involves using the Wagmi library, which provides React hooks for working with Ethereum. With Wagmi, you can sign messages to prove control of a specific Ethereum address securely.
+
+It's important to note that before signing a message, the user's wallet needs to be connected to the browser and the application. This typically involves using a wallet connection provider like Rainbowkit.
+
+Following code shows how to sign plan message with Wagmi in Javascript.
+
+```javascript
+try {
+    //Get wallet client
+    const walletClient = await getWalletClient();
+
+    // Message to be signed
+    const message = "Hello, World!";
+
+    //Sign message 
+    const signature = await walletClient?.signMessage({ message });                                        
+}
+catch (error) {
+    console.error(error);
+}
+```
+
+Following code shows how to sign hashed message with Wagmi in Javascript.
+
+```javascript
+ try {
+    //Get wallet client
+    const walletClient = await getWalletClient();
+
+    // Message to be signed
+    const message = "Hello, World!";
+    // Message hash
+    const messageHash = ethers.keccak256(ethers.toUtf8Bytes(message))
+
+    //Sign message 
+    const signature = await walletClient?.signMessage({ message: { raw: messageHash } });    
+}
+catch (error) {
+    console.error(error);
+}
+```
